@@ -32,8 +32,6 @@
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
-        <li><a href="https://bulma.io/">Bulma CSS</a></li>
-        <li><a href="https://animate.style/">Animate CSS</a></li>
         <li><a href="https://react.dev/">React JS</a></li>
     </ul>
 <div>
