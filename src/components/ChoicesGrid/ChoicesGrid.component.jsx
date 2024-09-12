@@ -4,7 +4,7 @@ function ChoicesGrid()
 {
     return (
         <div>
-            <h1>Choose</h1>
+            I am the choice grid
         </div>
     );
 }

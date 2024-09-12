@@ -1,10 +1,16 @@
 import BtnLink from "../BtnLink/BtnLink.component";
 
 
-function Hero({title, content, imgSrc = null, routeUrl = null})
+function Hero({title, content, imgSrc = null, routeUrl = null, fullHeight = false})
 {
+    let heroClassNameStr = "hero";
+    if (fullHeight)
+    {
+        heroClassNameStr += " min-h-full";
+    }
+
     return (
-        <div className="hero bg-base-200 min-h-full">
+        <div className={heroClassNameStr}>
             <div className="hero-content text-center">
                 <div className="max-w-md">
                     {
@@ -12,9 +18,9 @@ function Hero({title, content, imgSrc = null, routeUrl = null})
                         ?
                             (
                                 <img
-                                    className="imageHacker-logo"
+                                    className="imageHacker-hero-pic"
                                     src={imgSrc}
-                                    alt="ImageHacker Logo"
+                                    alt="ImageHacker Hero Pic"
                                 />
                             )
                         :
