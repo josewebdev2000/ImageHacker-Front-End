@@ -1,19 +1,23 @@
+import BtnLink from "../BtnLink/BtnLink.component";
 
-
-function ChoiceCard()
+function ChoiceCard({cardTitle, cardContent, imgSrc, routeUrl})
 {
     return (
-        <div className="card image-full l:w-1/3 m:w-2/4 s:w-full shadow-xl">
+        <div className="card bg-neutral-500 image-full l:w-1/3 m:w-2/4 s:w-full shadow-xl">
             <figure>
                 <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+                src={imgSrc}
+                alt={`${cardTitle} Image`} />
             </figure>
             <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 className="card-title flex justify-center items-center text-center">{cardTitle}</h2>
+                <p className="mt-4 text-center">{cardContent}</p>
                 <div className="card-actions justify-center">
-                    <button className="btn btn-info text-white uppercase">Go</button>
+                    <BtnLink 
+                        text="Go"
+                        classStr="btn btn-info text-white uppercase"
+                        route={routeUrl}
+                    />
                 </div>
             </div>
         </div>
