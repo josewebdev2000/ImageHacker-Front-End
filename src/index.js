@@ -7,12 +7,17 @@ import reportWebVitals from './reportWebVitals';
 // Import BrowserRouter for the Whole App
 import { BrowserRouter } from 'react-router-dom';
 
+// Import Contexts Here
+import { SmallScreenDetectorContextProvider } from './contexts/SmallScreenDetectorContext/SmallScreenDetectorContext.context';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <SmallScreenDetectorContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </SmallScreenDetectorContextProvider>
   </React.StrictMode>
 );
 
