@@ -1,12 +1,13 @@
 import BtnLink from "../BtnLink/BtnLink.component";
 
 
-function Hero({title, content, imgSrc = null, routeUrl = null, fullHeight = false})
+function Hero({title, content, imgSrc = null, routeUrl = null, fullHeight = false, extraClasses = ""})
 {
     let heroClassNameStr = "hero";
     if (fullHeight)
     {
         heroClassNameStr += " min-h-full";
+        heroClassNameStr += extraClasses;
     }
 
     return (
@@ -27,7 +28,13 @@ function Hero({title, content, imgSrc = null, routeUrl = null, fullHeight = fals
                             null
                     }
                     <h1 className="my-10 text-5xl font-bold">{title}</h1>
-                    <p className="py-6">{content}</p>
+                    {
+                        content
+                        ? 
+                        (<p className="py-6">{content}</p>)
+                        :
+                        null
+                    } 
                     {
                         routeUrl !== null
                         ?

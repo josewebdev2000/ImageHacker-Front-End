@@ -9,7 +9,7 @@ function Choices()
             <Hero 
                 title="Options"
                 imgSrc={options}
-                content="Choose an option"
+                extraClasses="my-0"
             />
             <ChoicesGrid />
         </div>

@@ -7,7 +7,7 @@ function Home()
             <Hero 
                 title="Image Hacker" 
                 imgSrc={logo}
-                content="Have you got any images to edit? Try ImageHacker out"
+                content="Have you got any images to edit?"
                 routeUrl="/choices"
                 fullHeight={true}
             />
