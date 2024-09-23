@@ -6,6 +6,7 @@ import options from "../../assets/pics/options.png";
 
 import { SmallScreenDetectorContext } from "../../contexts/SmallScreenDetectorContext/SmallScreenDetectorContext.context";
 import MobileError from "../../errors/MobileError/MobileError.error";
+import BtnGoBack from "../../components/BtnGoBack/BtnGoBack.component";
 
 function Choices()
 {
@@ -19,6 +20,7 @@ function Choices()
         :
         (
             <div className="bg-base-200 w-screen h-screen grid-rows-2" data-theme="dark">
+                <BtnGoBack />
                 <Hero 
                     title="Options"
                     imgSrc={options}

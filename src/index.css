@@ -16,9 +16,15 @@ code {
     monospace;
 }
 
-
 .imageHacker-hero-pic
 {
   border-radius: 50%;
   background-color: rgb(203 213 225);
+}
+
+.go-back-btn
+{
+  position: absolute;
+  left: 100px;
+  top: 100px;
 }
