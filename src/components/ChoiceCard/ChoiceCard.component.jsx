@@ -3,11 +3,12 @@ import BtnLink from "../BtnLink/BtnLink.component";
 function ChoiceCard({cardTitle, cardContent, imgSrc, routeUrl})
 {
     return (
-        <div className="card bg-neutral-500 image-full l:w-1/3 m:w-2/4 s:w-full shadow-xl">
+        <div className="card bg-neutral-500 image-full l:w-1/3 m:w-2/4 shadow-xl">
             <figure>
                 <img
                 src={imgSrc}
-                alt={`${cardTitle} Image`} />
+                alt={`${cardTitle} Image`}
+                style={{height: "200px"}}/>
             </figure>
             <div className="card-body">
                 <h2 className="card-title flex justify-center items-center text-center">{cardTitle}</h2>
